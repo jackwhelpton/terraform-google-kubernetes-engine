@@ -31,7 +31,7 @@ output "gcp_service_account_email" {
 
 output "gcp_service_account_fqn" {
   description = "FQN of GCP service account."
-  value       = "serviceAccount:${google_service_account.cluster_service_account.email}"
+  value       = local.gcp_sa_fqn
 }
 
 output "gcp_service_account_name" {
