@@ -55,7 +55,7 @@ variable "k8s_sa_name" {
 }
 
 variable "namespace" {
-  description = "Namespace for k8s service account"
+  description = "Namespace for the Kubernetes service account"
   default     = "default"
   type        = string
 }
@@ -81,7 +81,7 @@ variable "automount_service_account_token" {
 variable "roles" {
   type        = list(string)
   default     = []
-  description = "(optional) A list of roles to be added to the created Service account"
+  description = "A list of roles to be added to the created service account"
 }
 
 variable "impersonate_service_account" {
